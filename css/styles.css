@@ -15,6 +15,7 @@ body {
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
+    margin: 0;
 }
 
 .visually-hidden {
@@ -90,7 +91,7 @@ body {
     background-color: var(--primary-light-color);
 }
 
-.container {
+.nav-container {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -141,8 +142,12 @@ body {
 
 /* Advantages */
 
-.advantages-container {
-    background-color: var(--secondary-light-color);
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .advantages-heder {
@@ -150,7 +155,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    margin-top: 94px;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -164,7 +169,11 @@ body {
     margin-bottom: 0;
 }
 
-.works {
+.title {
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--title-text-color);
+    text-align: center;
     margin-top: 0;
     margin-bottom: 50px;
 }
@@ -179,14 +188,6 @@ body {
     background-color: var(--primary-light-color);
 }
 
-.title {
-    font-size: 36px;
-    line-height: 1.17;
-    color: var(--title-text-color);
-    text-align: center;
-
-}
-
 .command {
     font-size: 16px;
     line-height: 1.19;
@@ -198,11 +199,22 @@ body {
     font-weight: 500;
 }
 
+.command-card .command {
+    margin-bottom: 0;
+}
+
 /* Footer */
 
 .footer {
     background-color: var(--background-dark-color);
-    color: var(--primary-light-color);
+}
+
+.footer-container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .physical-address,
@@ -215,15 +227,23 @@ body {
 
 .physical-address {
     color: var(--primary-light-color);
+    display: inline-block;
 }
 
 .footer-link {
     color: rgba(255, 255, 255, 0.6);
+    display: inline-block;
+    margin-top: 9px;
 }
 
 .footer-link:hover,
 .footer-link:focus {
     color: var(--accent-color);
+}
+
+.footer-container > .logo {
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 /* Portfolio */
