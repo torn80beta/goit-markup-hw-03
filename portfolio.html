@@ -24,9 +24,9 @@
   <body>
     <header class="page-header">
       <!-- Верхня лінія -->
-      <div class="container">
+      <div class="container nav">
         <a class="logo" href="./index.html">Web<span class="logo-black">Studio</span></a>
-        <nav>
+        <nav class="nav-container">
           <ul class="site-nav list">
             <li class="item"><a class="link" href="./index.html">Студія</a></li>
             <li class="item"><a class="link current" href="./portfolio.html">Портфоліо</a></li>
@@ -43,9 +43,9 @@
     </header>
 
     <main>
-      <div class="container">
-        <!-- Фільтр -->
-        <section class="section">
+      <section class="section">
+        <div class="container">
+          <!-- Фільтр -->
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="list filter-container">
             <li class="item"><button class="button filter-button" type="button">Усі</button></li>
@@ -181,15 +181,15 @@
               </a>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <!-- Підвал -->
     <footer class="footer">
       <div class="container">
         <a class="logo" href="./index.html">Web<span class="logo-white">Studio</span></a>
-        <address>
+        <address class="address-list">
           <ul class="list">
             <li>
               <a
